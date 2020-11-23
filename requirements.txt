@@ -24,8 +24,8 @@ six==1.15.0
 #sqlite==3.33.0
 threadpoolctl==2.1.0
 #vc==14.1
-vs2015_runtime==14.16.27012
+#vs2015_runtime==14.16.27012
 werkzeug==1.0.1
-wheel==0.35.1
+#wheel==0.35.1
 wincertstore==0.2
 zlib==1.2.11

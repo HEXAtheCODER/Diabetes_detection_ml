@@ -1,31 +1,13 @@
-# This file may be used to create an environment using:
-# $ conda create --name <env> --file <this file>
-# platform: win-64
-#ca-certificates==2020.10.14
-certifi==2020.6.20
-click==7.1.2
-flask==1.1.2
-gunicorn==20.0.4
+flask==1.1.1
+gunicorn==19.9.0
 itsdangerous==1.1.0
 jinja2==2.11.2
 joblib==0.17.0
 markupsafe==1.1.1
 numpy==1.19.4
-#openssl==1.1.1h
 pandas==1.1.4
 pip==20.2.4
-#python==3.7.9
-python-dateutil==2.8.1
-pytz==2020.4
 scikit-learn==0.23.2
 scipy==1.5.4
-setuptools==50.3.1
-six==1.15.0
-#sqlite==3.33.0
-threadpoolctl==2.1.0
-#vc==14.1
-#vs2015_runtime==14.16.27012
 werkzeug==1.0.1
-#wheel==0.35.1
 wincertstore==0.2
-#zlib==1.2.11

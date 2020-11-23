@@ -28,4 +28,4 @@ threadpoolctl==2.1.0
 werkzeug==1.0.1
 #wheel==0.35.1
 wincertstore==0.2
-zlib==1.2.11
+#zlib==1.2.11

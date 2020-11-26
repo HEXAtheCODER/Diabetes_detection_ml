@@ -20,4 +20,4 @@ def predict():
     return render_template("result.html",result = prediction[0])
 
 
-app.run(debug=True)
+app.run()

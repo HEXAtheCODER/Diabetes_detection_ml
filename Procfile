@@ -1,2 +1,2 @@
-web: python flask_app.py 5000
+web: gunicorn flask_app:app
 

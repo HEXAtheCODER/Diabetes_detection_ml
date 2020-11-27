@@ -1,7 +1,12 @@
 .navbar-nav .nav-link {
   color:white !important;
 }
-
+.navbar.navbar-2 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+}
+.nav-link.active{
+  border-bottom:2px solid #41A5EE;
+}
 .information-of-diabetes {
   margin: 10% 10% 10%;
 }
@@ -11,6 +16,6 @@
 }
 
 #form {
-  text-align: center;
+  /* text-align: center; */
   margin: 5% 10%;
 }

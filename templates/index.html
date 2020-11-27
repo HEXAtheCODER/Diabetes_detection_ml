@@ -6,46 +6,46 @@
     <title>Diabetes Detection</title>
     <link rel="stylesheet" href="static\style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-
+    <nav class="navbar navbar-expand-lg navbar-light navbar-2 bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="\">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#detect">Detect</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-      </ul>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/detect">Detect</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="border:1px none red;">
       <div class="container">
-      <h1 class="display-4">Diabetes Detection</h1>
-      <p class="lead">A machine learning project made by Srimanta Ganguly.</p>
+        <h1 class="display-4">Diabetes Detection</h1>
+        <p class="lead">A machine learning project made by Srimanta Ganguly.</p>
       </div>
     </div>
 
-    <div class="information-of-diabetes">
-
+    <div class="information-of-diabetes" style="border:1px none red; margin-top:0;">
       <h2 id="heading2">Diabetes</h2>
-
       <p>
         Diabetes is a condition that impairs the body’s ability to process blood glucose, otherwise known as blood sugar.
         The estimated number of people over 18 years of age with diagnosed and undiagnosed diabetes is 30.2 million. The figure represents between 27.9 and 32.7 percent of the population.
         Without ongoing, careful management, diabetes can lead to a buildup of sugars in the blood, which can increase the risk of dangerous complications, including stroke and heart disease.
         Different kinds of diabetes can occur, and managing the condition depends on the type. Not all forms of diabetes stem from a person being overweight or leading an inactive lifestyle. In fact, some are present from childhood.
       </p>
-
-      <br>
-
       <p>
         Three major diabetes types can develop: <b>Type 1</b>, <b>type 2</b>, and gestational diabetes. <br>
         <b>Type I diabetes:</b> Also known as juvenile diabetes, this type occurs when the body fails to produce insulin. People with type I diabetes are insulin-dependent, which means they must take artificial insulin daily to stay alive. <br>
@@ -54,68 +54,6 @@
         <b>Gestational diabetes:</b> This type occurs in women during pregnancy when the body can become less sensitive to insulin. Gestational diabetes does not occur in all women and usually resolves after giving birth. <br>
         Less common types of diabetes include <b>monogenic diabetes</b> and <b>cystic fibrosis-related diabetes</b>.
       </p>
-
-      <br>
-
-      <span id="detect"><h2 id="heading2">Detect for diabetes</h2></span>
-
-      <br>
-
-      <form id="form" action="/result" method="post">
-        <div class="form-group">
-          <label for="numberOfPregency">Number of times pregnant</label>
-          <input type="text" class="form-control" name="numberOfPregency">
-        </div>
-        <div class="form-group">
-          <label for="plasmaGlusoce">Plasma glucose concentration a 2 hours in an oral glucose tolerance test</label>
-          <input type="text" class="form-control" name="plasmaGlusoce">
-        </div>
-        <div class="form-group">
-          <label for="dsp">Diastolic blood pressure(mm Hg)</label>
-          <input type="text" class="form-control" name="dsp">
-        </div>
-        <div class="form-group">
-          <label for="tricepsSkinFold">Triceps skin fold thickness (mm)</label>
-          <input type="text" class="form-control" name="tricepsSkinFold">
-        </div>
-        <div class="form-group">
-          <label for="serumInsulin">2-Hour serum insulin (muU/ml)</label>
-          <input type="text" class="form-control" name="serumInsulin">
-        </div>
-        <div class="form-group">
-          <label for="bmi">Body mass index (weight in kg/(height in m)^2)</label>
-          <input type="text" class="form-control" name="bmi">
-        </div>
-        <div class="form-group">
-          <label for="diabetesPedigreeFunction">Diabetes pedigree function</label>
-          <input type="text" class="form-control" name="diabetesPedigreeFunction">
-        </div>
-        <div class="form-group">
-          <label for="age">Age</label>
-          <input type="text" class="form-control" name="age">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
-      <br>
-
-      <span id="about"><h2 id="heading2">About</h2></span>
-
-      <br>
-
-      <p>
-        The above project is done by the help of <b>Logistic Regression</b> algorithm. This logistic regression is a part of scikit-learn libary.
-        <b>Scikit-learn</b> (formerly scikits.learn and also known as sklearn) is a free software machine learning library for the Python programming language.
-        It features various classification, regression and clustering algorithms including support vector machines, random forest etc.,
-        and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. The web application is made by the help of <b>HTML</b>,
-        <b>CSS</b>, <b>Bootstrap</b> and the backend is done by the help of <b>Flask</b>, a micro wed framework written in flask.
-
-        <br>
-
-        This project is deployed on <b>Heroku</b>.
-      </p>
-
     </div>
 
   </body>
